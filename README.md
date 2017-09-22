@@ -9,7 +9,7 @@ This code is adapted from [matplotlib's xcorr function](https://matplotlib.org/e
 
 Calls [numpy.correlate(x,y, mode='full')](https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.correlate.html "numpy.correlate()")
 
-#### this is the necessary transformation function (inner product -> coeffs.)
+#### This is the necessary transformation function (inner product -> coeffs.)
 n = np.sqrt(np.dot(x, x) * np.dot(y, y)) 
 
 coeffs = np.true_divide(innerproduct,n)
